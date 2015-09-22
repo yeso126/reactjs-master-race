@@ -52,7 +52,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _componentsMessageBoxJsx = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./components/message-box.jsx\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var _componentsMessageBoxJsx = __webpack_require__(157);
 
 	var _componentsMessageBoxJsx2 = _interopRequireDefault(_componentsMessageBoxJsx);
 
@@ -20433,6 +20433,144 @@
 	module.exports = onlyChild;
 
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ },
+/* 157 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _subJsx = __webpack_require__(158);
+
+	var _subJsx2 = _interopRequireDefault(_subJsx);
+
+	var MessageBox = (function (_React$Component) {
+	  _inherits(MessageBox, _React$Component);
+
+	  function MessageBox(props) {
+	    _classCallCheck(this, MessageBox);
+
+	    _get(Object.getPrototypeOf(MessageBox.prototype), 'constructor', this).call(this, props);
+	    this.state = {
+	      txt: ''
+	    };
+	  }
+
+	  _createClass(MessageBox, [{
+	    key: 'updateTxt',
+	    value: function updateTxt(e) {
+	      this.setState({
+	        txt: e.target.value
+	      });
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var _this = this;
+
+	      return _react2['default'].createElement(
+	        'div',
+	        { className: 'container' },
+	        _react2['default'].createElement(
+	          'h1',
+	          null,
+	          'Parent Component'
+	        ),
+	        _react2['default'].createElement('input', { type: 'text', onChange: function (e) {
+	            return _this.updateTxt(e);
+	          } }),
+	        _react2['default'].createElement(
+	          'h2',
+	          null,
+	          this.state.txt
+	        ),
+	        _react2['default'].createElement(_subJsx2['default'], { comment: this.state.txt })
+	      );
+	    }
+	  }]);
+
+	  return MessageBox;
+	})(_react2['default'].Component);
+
+	exports['default'] = MessageBox;
+	module.exports = exports['default'];
+
+/***/ },
+/* 158 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var Sub = (function (_React$Component) {
+	  _inherits(Sub, _React$Component);
+
+	  function Sub() {
+	    _classCallCheck(this, Sub);
+
+	    _get(Object.getPrototypeOf(Sub.prototype), 'constructor', this).apply(this, arguments);
+	  }
+
+	  _createClass(Sub, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2['default'].createElement(
+	        'div',
+	        null,
+	        _react2['default'].createElement(
+	          'h3',
+	          null,
+	          'Nested Component'
+	        ),
+	        _react2['default'].createElement(
+	          'h4',
+	          null,
+	          this.props.comment
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Sub;
+	})(_react2['default'].Component);
+
+	exports['default'] = Sub;
+	module.exports = exports['default'];
 
 /***/ }
 /******/ ]);
