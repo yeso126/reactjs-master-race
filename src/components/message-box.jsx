@@ -5,21 +5,28 @@ class MessageBox extends React.Component {
   constructor(props){
     super(props);
     this.state ={
-      txt: ''
+      red: 0,
+      green: 0,
+      blue: 0
   }
 }
-  updateTxt(e) {
+ updateTxt(e) {
     this.setState({
-      txt: e.target.value
+      red: React.findDOMNode(this.refs.red.refs.range).value,
+      green: React.findDOMNode(this.refs.green.refs.range).value,
+      blue: React.findDOMNode(this.refs.blue.refs.range).value
     })
   }
   render() {
     return (
       <div className="container">
         <h1>Parent Component</h1>
-        <input type="text" onChange={(e) => this.updateTxt(e)}></input>
-        <h2>{this.state.txt}</h2>
-        <Sub comment={this.state.txt}/>
+        <Sub ref="red"    range={(e) => this.updateTxt(e)}/>
+        <label>{this.state.red}</label>
+        <Sub ref="green"  range={(e) => this.updateTxt(e)}/>
+        <label>{this.state.green}</label>
+        <Sub ref="blue"   range={(e) => this.updateTxt(e)}/>
+        <label>{this.state.blue}</label>
       </div>
     );
   }

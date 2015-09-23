@@ -4,8 +4,8 @@ class Sub extends React.Component {
   render() {
     return (
       <div>
-        <h3>Nested Component</h3>
-        <h4>{this.props.comment}</h4>
+        <h4>Nested component</h4>
+        <input ref="range" defaultValue="0" type="range" onChange={this.props.range}></input>
       </div>
     )
   }
