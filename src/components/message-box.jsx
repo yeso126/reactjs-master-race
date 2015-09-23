@@ -1,5 +1,5 @@
 import React from 'react';
-import Sub from './sub.jsx';
+import Slider from './slider.jsx';
 
 class MessageBox extends React.Component {
   constructor(props){
@@ -21,12 +21,12 @@ class MessageBox extends React.Component {
     return (
       <div className="container">
         <h1>Parent Component</h1>
-        <Sub ref="red"    range={(e) => this.updateTxt(e)}/>
-        <label>{this.state.red}</label>
-        <Sub ref="green"  range={(e) => this.updateTxt(e)}/>
-        <label>{this.state.green}</label>
-        <Sub ref="blue"   range={(e) => this.updateTxt(e)}/>
-        <label>{this.state.blue}</label>
+        <Slider ref="red"    range={(e) => this.updateTxt(e)}/>
+        <p>{this.state.red}</p>
+        <Slider ref="green"  range={(e) => this.updateTxt(e)}/>
+        <p>{this.state.green}</p>
+        <Slider ref="blue"   range={(e) => this.updateTxt(e)}/>
+        <p>{this.state.blue}</p>
       </div>
     );
   }

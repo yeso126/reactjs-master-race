@@ -91,12 +91,18 @@ input[type=range]:focus::-ms-fill-upper {
   height: 2em;
   line-height: 2em;
   text-align: center;
-  cursor: pointer;
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
   background: #928483;
   border-radius: 6.2px;
   border: 0.7px solid #562425;
 }
-label {
-  
+
+p {
+  width: 25%;
+  line-height: 2em;
+  text-align: center;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #F8F8F8;
+  border-radius: 6.2px;
+  border: 0.7px solid #562425;
 }

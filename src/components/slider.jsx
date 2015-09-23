@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Sub extends React.Component {
+class Slider extends React.Component {
   render() {
     return (
       <div>
@@ -11,4 +11,4 @@ class Sub extends React.Component {
   }
 }
 
-export default Sub;
+export default Slider;

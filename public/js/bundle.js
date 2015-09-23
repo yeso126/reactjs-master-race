@@ -20458,9 +20458,9 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _subJsx = __webpack_require__(158);
+	var _sliderJsx = __webpack_require__(159);
 
-	var _subJsx2 = _interopRequireDefault(_subJsx);
+	var _sliderJsx2 = _interopRequireDefault(_sliderJsx);
 
 	var MessageBox = (function (_React$Component) {
 	  _inherits(MessageBox, _React$Component);
@@ -20498,27 +20498,27 @@
 	          null,
 	          'Parent Component'
 	        ),
-	        _react2['default'].createElement(_subJsx2['default'], { ref: 'red', range: function (e) {
+	        _react2['default'].createElement(_sliderJsx2['default'], { ref: 'red', range: function (e) {
 	            return _this.updateTxt(e);
 	          } }),
 	        _react2['default'].createElement(
-	          'label',
+	          'p',
 	          null,
 	          this.state.red
 	        ),
-	        _react2['default'].createElement(_subJsx2['default'], { ref: 'green', range: function (e) {
+	        _react2['default'].createElement(_sliderJsx2['default'], { ref: 'green', range: function (e) {
 	            return _this.updateTxt(e);
 	          } }),
 	        _react2['default'].createElement(
-	          'label',
+	          'p',
 	          null,
 	          this.state.green
 	        ),
-	        _react2['default'].createElement(_subJsx2['default'], { ref: 'blue', range: function (e) {
+	        _react2['default'].createElement(_sliderJsx2['default'], { ref: 'blue', range: function (e) {
 	            return _this.updateTxt(e);
 	          } }),
 	        _react2['default'].createElement(
-	          'label',
+	          'p',
 	          null,
 	          this.state.blue
 	        )
@@ -20533,7 +20533,8 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 158 */
+/* 158 */,
+/* 159 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -20556,16 +20557,16 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var Sub = (function (_React$Component) {
-	  _inherits(Sub, _React$Component);
+	var Slider = (function (_React$Component) {
+	  _inherits(Slider, _React$Component);
 
-	  function Sub() {
-	    _classCallCheck(this, Sub);
+	  function Slider() {
+	    _classCallCheck(this, Slider);
 
-	    _get(Object.getPrototypeOf(Sub.prototype), "constructor", this).apply(this, arguments);
+	    _get(Object.getPrototypeOf(Slider.prototype), "constructor", this).apply(this, arguments);
 	  }
 
-	  _createClass(Sub, [{
+	  _createClass(Slider, [{
 	    key: "render",
 	    value: function render() {
 	      return _react2["default"].createElement(
@@ -20581,10 +20582,10 @@
 	    }
 	  }]);
 
-	  return Sub;
+	  return Slider;
 	})(_react2["default"].Component);
 
-	exports["default"] = Sub;
+	exports["default"] = Slider;
 	module.exports = exports["default"];
 
 /***/ }
