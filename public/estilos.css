@@ -83,8 +83,26 @@ input[type=range]:focus::-ms-fill-lower {
 input[type=range]:focus::-ms-fill-upper {
   background: #9e9191;
 }
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 0;
+  margin: 0;
+}
+
 .container {
   width: 20em;
+  background: #E6E6E6;
+  border: 6.7px solid #562425;
+  border-radius: 6.2px;
+  padding:0.5em 2em 1.5em 2em;
+}
+.container h1 {
+  text-align: center;
 }
 .container h2 {
   width: 100%;
