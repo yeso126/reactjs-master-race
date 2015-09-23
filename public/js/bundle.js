@@ -20572,7 +20572,7 @@
 	        "div",
 	        null,
 	        _react2["default"].createElement(
-	          "h4",
+	          "h2",
 	          null,
 	          "Nested component"
 	        ),
